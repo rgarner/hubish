@@ -1,21 +1,21 @@
-## MAC OS
-.DS_Store
-
-## TEXTMATE
-*.tmproj
-tmtags
-
-## EMACS
+config/database.yml
+config/*.sphinx.conf
+config/s3_credentials.yml
 *~
-\#*
-.\#*
-
-## VIM
-*.swp
-
-## PROJECT::GENERAL
-coverage
-rdoc
-pkg
-
-## PROJECT::SPECIFIC
+*.cache
+*.log
+*.pid
+tmp/**/*
+.DS_Store
+db/cstore/**
+db/sphinx/**
+doc/api
+doc/app
+doc/plugins
+doc/*.dot
+coverage/*
+db/*.sqlite3
+log/*
+*.tmproj
+*.sw?
+.idea/workspace.xml
