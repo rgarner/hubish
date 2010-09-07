@@ -2,6 +2,16 @@
 
 Hubish is for exporting github issues in XML form (import to follow).
 
+== Usage
+
+ gem install hubish
+ 
+ script/generate hubish <repo_name>
+ 
+ rake github:export[login, token]
+ 
+Note you can supply login and token via GITHUB_LOGIN and GITHUB_TOKEN environment variables.
+
 == Note on Patches/Pull Requests
  
 * Fork the project.
