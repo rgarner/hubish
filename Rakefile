@@ -13,6 +13,8 @@ begin
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_dependency "nokogiri", ">= 1.4.1"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    
+    gem.files =  FileList["[A-Z]*", "{generators,lib,spec}/**/*"] - FileList["**/*.log"]
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

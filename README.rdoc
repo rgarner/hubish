@@ -1,6 +1,6 @@
 = hubish
 
-Description goes here.
+Hubish is for exporting github issues in XML form (import to follow).
 
 == Note on Patches/Pull Requests
  

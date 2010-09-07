@@ -8,8 +8,8 @@ module GitHub
       @login = login || ENV['GITHUB_LOGIN']
       @token = token || ENV['GITHUB_TOKEN']
 
-      raise RuntimeError, "Login required (pass login)" unless @login
-      raise RuntimeError, "Token required (pass token)" unless @token
+      raise ArgumentError, "Login required (pass login)" unless @login
+      raise ArgumentError, "Token required (pass token)" unless @token
 
       issues_base = File::join GITHUB_XML_BASE, "issues/list/#{@login}/#{repo}"
       @open_issues = issues_base + '/open'

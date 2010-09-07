@@ -10,4 +10,4 @@ doc/plugins
 *.tmproj
 *.sw?
 .idea/workspace.xml
-.gemspec
+*.gemspec
