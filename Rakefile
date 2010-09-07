@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "hubish"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A rubbish github issues importer/exporter}
+    gem.description = %Q{Imports and exports issues from github per-project}
     gem.email = "rgarner@zephyros-systems.co.uk"
     gem.homepage = "http://github.com/rgarner/hubish"
     gem.authors = ["Russell Garner"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_dependency "nokogiri", ">= 1.4.1"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
